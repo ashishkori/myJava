@@ -1,0 +1,15 @@
+package myJava;
+import java.util.*;
+public class LinkedListDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		LinkedList<String> list=new LinkedList<String>();
+		list.add("ashish");
+		list.add(null);
+		list.addFirst("Mr.");
+		list.addLast("Kori");
+
+	}
+
+}

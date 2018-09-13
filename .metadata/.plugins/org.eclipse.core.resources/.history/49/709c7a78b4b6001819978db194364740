@@ -1,0 +1,19 @@
+import java.util.*;
+
+public class IdentityHashMapDemo {
+	public static void main(String[] args) {
+	HashMap m=new HashMap();
+	Integer i1=new Integer(127); 
+	Integer i2=new Integer(127); 
+	Integer i3=new Integer(10); 
+	System.out.println(i1==i2);
+	System.out.println(i1.equals(i2));
+	//i1.equals(i2);
+	m.put(i1, 10252);
+	m.put(i2, "I2");
+	m.put(i3, "I3");
+	System.out.println(m);
+	
+	
+	}	
+}

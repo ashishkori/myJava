@@ -1,0 +1,13 @@
+package myJava;
+import java.util.*;
+import java.util
+public class SortetSetDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		TreeSet t=new TreeSet();
+		//SortedSet s=new TreeSet();
+
+	}
+
+}
