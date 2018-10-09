@@ -7,7 +7,7 @@ public class GetClassDemo {
 	public static void main(String args[])
 	{
 		int count=0;
-		Student1 s=new Student1(25,"ashish");
+		String s=new String("ashish");
 		Class c=s.getClass();
 		Method[] m=c.getDeclaredMethods();
 		System.out.println("Declared Method");
