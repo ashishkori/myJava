@@ -21,6 +21,7 @@ public class WidenigAutoboxingAndVarArg {
 		int x=10;
 		m1(x); //Widening.
 		
+		
 
 	}
 

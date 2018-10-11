@@ -12,7 +12,8 @@ public class AutoBoxingToWiding {
 		//System.out.println("AutoBoxing Wins the race  ");
 		int x=10;
 		m1(x); 
-
+		Number n=10;
+		m1(n);
 	}
 
 }
