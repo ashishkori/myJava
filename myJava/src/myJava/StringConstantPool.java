@@ -19,7 +19,7 @@ public class StringConstantPool {
 		System.out.println(s7==s1);//false
 		System.out.println(s1.equals(s7));//true
 		final String s8="You can not";
-		String s9=s8+" change me"; // Performed at compile time because both are Compile time Constant
+		String s9=s8+" change me"; //Performed at compile time because both are Compile time Constant
 		System.out.println(s3==s9);//true
 		System.out.println(s6==s8);//true
 	}
