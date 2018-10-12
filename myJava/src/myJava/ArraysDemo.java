@@ -4,7 +4,7 @@ import java.util.*;
 
 public class ArraysDemo {
 
-	public static void main(String[] args) {
+	public static void main(String... args) {
 		// TODO Auto-generated method stub
 		int a[]= {25,20,10,3,25,956,36,26,99,600};
 		String s[]= {"Z ","X","A ","Y ","b ","a ","s ","S ","t ","u ","W ","Y ","z ","D "};
