@@ -7,8 +7,7 @@ public class ClasssInsideInterface {
 		Vehicle.Default d=new Vehicle.Default();
 		d.getWeels();
 		Bus b=new Bus();
-		b.getWeels();
-		
+		b.getWeels();//
 	}
 
 }
