@@ -9,6 +9,7 @@ public class InerClassDemo {
 		Car.Engine e=c.new Engine();
 		e.m1();
 		
+		
 	}
 
 }
