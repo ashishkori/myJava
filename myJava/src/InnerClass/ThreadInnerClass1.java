@@ -15,7 +15,28 @@ public class ThreadInnerClass1 {
 					}
 				};
 		Thread t=new Thread(r);
+		
 		t.start();
+/*		Thread t2=new Thread(new Runnable() 
+		{
+			public void run()
+			{
+				for(int i=0;i<5;i++)
+				{
+					System.out.println("Child-2 Thread");
+				}
+			}
+		} );t2.start();
+*/		new Thread(new Runnable() 
+			{
+				public void run()
+					{
+					for(int i=0;i<5;i++)
+						{
+							System.out.println("Child-2 Thread");
+						}
+					}
+			} ).start();
 		for(int i=0;i<5;i++)
 		{
 			System.out.println("Main Thread");
