@@ -9,8 +9,6 @@ public class ClasssInsideInterface {
 		Bus b=new Bus();
 		b.getWeels();
 		
-		
-
 	}
 
 }
