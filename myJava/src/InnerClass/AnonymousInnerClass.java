@@ -21,6 +21,9 @@ public class AnonymousInnerClass {
 		p1.taste();
 		p2.taste();
 		p3.taste();
+		System.out.println(p1.getClass().getName());
+		System.out.println(p2.getClass().getName());
+		System.out.println(p3.getClass().getName());
 	}
 }
 class Popcorn
