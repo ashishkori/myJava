@@ -5,6 +5,7 @@ public class SynchrnizedBlock {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Display d=new Display();
+		//Display d1=new Display();
 		ThreadDem t=new ThreadDem(d,"Dhoni");
 		ThreadDem t1=new ThreadDem(d,"Yuraj");
 		t.start();
@@ -24,7 +25,7 @@ class Display
 			{
 				System.out.print("Good Morning :");
 				try {
-					Thread.sleep(100);
+					Thread.sleep(1000);
 				}catch(InterruptedException e) {};
 				System.out.println(s);
 			}
