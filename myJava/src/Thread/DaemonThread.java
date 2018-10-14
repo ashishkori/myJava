@@ -12,6 +12,8 @@ public class DaemonThread {
 		System.out.println(t.isDaemon());
 		t.setDaemon(true);;
 		System.out.println(t.isDaemon());
+		t.start();
+		System.out.println("End of Main Thread");//If last non Daemon thread terminates all Daemon thread must terminate its execution
 		
 		
 	}
@@ -19,4 +21,14 @@ public class DaemonThread {
 }
 class Daemon extends Thread
 {
+	public void run()
+	{
+		for(int i=0;i<100;i++)
+		{
+			System.out.println((i+1)+" Child Thread");
+			
+			
+		}
 	}
+	
+}
