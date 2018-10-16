@@ -1,6 +1,11 @@
 package LambdaExpression;
-import java.util.*;
-public class InnerClassLambda {
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+
+public class CollectionDemo1 {
+
 	public static void main(String ... args)
 	{
 		ArrayList<Employee> l=new ArrayList<Employee>();
@@ -13,10 +18,16 @@ public class InnerClassLambda {
 		l.add(new Employee("Durga",1232));
 		System.out.println(l);
 		Comparator<Employee> c=(e1,e2)->{
-					return (e2.name).compareTo(e1.name);
+					//return (e2.name).compareTo(e1.name);
+			return e1.emp>e2.emp?1:-1;
 				};// Lambda Expression for comparator Interface
 		Collections.sort(l, c);
 		System.out.println(l);
+		Collections.sort(l, (e1,e2)->e1.name.compareTo(e2.name));
+		System.out.println(l);
+		//Collections.sort(l, (e1,e2)->e1.emp.compareTo(e2.emp));
+		//System.out.println(l);
+		
 	}
 }
 class Employee
