@@ -3,6 +3,7 @@ package LambdaExpression;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Predicate;
 
@@ -39,6 +40,9 @@ public class StudentGrade {
 		l.add(new Student("Sumnny",68));
 		l.add(new Student("Manish",37));
 		l.add(new Student("Shree",20));
+		Consumer<Student> c=s->{
+			System.out.print(s.name+" "+s.mark+"----->");
+		};
 /*		Comparator<Student> c=(St1,St2)->
 		{
 			return St1.name.compareTo(St2.name);
@@ -55,7 +59,7 @@ public class StudentGrade {
 		{
 			if(p.test(s1))
 			{
-				System.out.print(s1.name+" : "+ s1.mark+"---> ");
+				c.accept(s1);
 				System.out.println(g.apply(s1));
 				
 			}
