@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.function.Function;
+import java.util.function.Predicate;
 
 public class StudentGrade {
 
@@ -43,12 +44,24 @@ public class StudentGrade {
 			return St1.name.compareTo(St2.name);
 		};
 */
+		Predicate<Student> p=(s)->s.mark>70;
 		Collections.sort(l, (s1,s2)->{return -s1.name.compareTo(s2.name);});
 		for(Student s1:l)
 		{
 			System.out.print(s1.name+" : ");
 			System.out.println(g.apply(s1));
 		}
+		for(Student s1:l)
+		{
+			if(p.test(s1))
+			{
+				System.out.print(s1.name+" : "+ s1.mark+"---> ");
+				System.out.println(g.apply(s1));
+				
+			}
+			
+		}
+		
 		
 
 	}
