@@ -10,7 +10,7 @@ public class GenericDemo1 <T extends Number> {
 		// GenericDemo1<String> t3=new GenericDemo1<String>();  // Unresolved compilation problems:  Bound mismatch: The type String is not a valid substitute for the bounded parameter <T extends Number> of the type GenericDemo1<T>
 	   Generic1<String> s1=new Generic1<String>();	
 	   Generic1<Object> o1=new Generic1<Object>();
-	   Generic1<Student> o2=new Generic1<Student>();
+	   //Generic1<Student> o2=new Generic1<Student>();
 	}
 
 }
